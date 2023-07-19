@@ -28,4 +28,11 @@
 
 @code {
     int numberOfCards = 5;
+
+    string[] pickedCards = new string[0];
+
+    void UpdateCards()
+    {
+        pickedCards = CardPicker.PickSomeCards(numberOfCards);
+    }
 }

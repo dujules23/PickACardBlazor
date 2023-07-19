@@ -40,10 +40,13 @@ namespace PickACardBlazor
 			int value = random.Next(1, 14);
 			// if it's 1 return the string Ace
 			if (value == 1) return "Ace";
-			// if its 11
+			// if it's 11 return the string Jack
 			if (value == 11) return "Jack";
+			// if it's 12 return the string Queen
 			if (value == 12) return "Queen";
+			// if it's 13 return the string King
 			if (value == 13) return "King";
+			// if none of the values about it will just return the number for numbered cards
 			return value.ToString();
         }
     }
